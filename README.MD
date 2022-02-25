@@ -10,18 +10,18 @@ https://aws.amazon.com/free/?trk=ps_a131L0000085DvcQAE&trkCampaign=acq_paid_sear
 To create an IAM user and keys use this link. !!! CHECK the 'programmatic access' box and copy the keys
 https://docs.aws.amazon.com/IAM/latest/UserGuide/id_users_create.html
 
-place the keys here at to the Linux machine from where you will deploy the DDoS env
-
-~/.aws/credentials
+place the keys here to the Linux machine from where you will deploy the DDoS env
+file ~/.aws/credentials
+```
 [default]
 aws_access_key_id = AKI..
 aws_secret_access_key = HOZ...
-
+```
 - Download terraform here https://releases.hashicorp.com/terraform/1.1.6/terraform_1.1.6_linux_arm64.zip
 - unzip it 'unzip terraform_1.1.6_linux_arm64.zip'
 - then 'chmod +x terraform'
 - then 'mv terraform /usr/bin/.'
-- then edit file variables.tf and choose whit amount of nodes you want to start in nodes_count. As more instance as better :)
+- then edit file variables.tf and choose which amount of nodes you want to start in nodes_count. As more instances as better :)
 - then run 'terraform plan'
 - then run 'terraform apply' and press 'yes', when asked
 

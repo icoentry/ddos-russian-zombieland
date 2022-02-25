@@ -1,0 +1,12 @@
+#cloud-config
+repo_update: true
+repo_upgrade: all
+
+packages:
+  - docker.io
+  - docker-compose
+
+runcmd:
+  - service docker start
+  - [ sh, -c, "groupadd docker" ]
+  - [ sh, -c, "usermod -a -G docker ubuntu" ]

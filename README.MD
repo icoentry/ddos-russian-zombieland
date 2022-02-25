@@ -30,7 +30,7 @@ The attack has been started
 
 WARNING!!! 
 
-You potentially could have a limit of maximum AWS EC2 instance you can start so you will have an error if you trying to start 100 VMs, but AWS allows just 10. To fix it do the follogin
+You potentially could have a limit of maximum AWS EC2 instance you can start so you will have an error if you trying to start 100 VMs, but AWS allows just 10. To fix it do the following
 
 https://aws.amazon.com/premiumsupport/knowledge-center/ec2-instance-limit/
 
